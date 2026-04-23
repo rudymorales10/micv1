@@ -3,13 +3,8 @@ body {
     background: linear-gradient(135deg, #225757 0%, #6cc8c6 100%);
     background-attachment: fixed;
     margin: 0;
-    /* REDUCIDO para que la foto suba */
-    padding-top: 100px; 
+    padding-top: 130px; 
     font-family: 'Segoe UI', sans-serif;
-    
-    /* TRUCO PARA QUE SE VEA TODO EN EL CELULAR SIN RESPONSIVE */
-    min-width: 1200px; /* Obliga al navegador a mantener el ancho de compu */
-    width: 100%;
 }
 
 /* 2. BARRA DE NAVEGACIÓN */
@@ -54,9 +49,8 @@ body {
 h1 {
     text-align: center;
     color: #000000;
-    /* Margen negativo para que pegue a la barra */
-    margin-top: -10px; 
-    padding-top: 0; 
+    margin-top: 0; 
+    padding-top: 10px; 
     margin-bottom: 10px;
     font-size: 2.5rem;
 }

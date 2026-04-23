@@ -1,26 +1,77 @@
-/* Estilo base de la barra */
+/* 1. CONFIGURACIÓN DEL CUERPO */
+body {
+    background: linear-gradient(135deg, #225757 0%, #6cc8c6 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding-top: 130px; 
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* 2. BARRA DE NAVEGACIÓN */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #399a99;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 15px 0;
+}
+
 .navbar ul {
-list-style-type: symbols(none);
-    background-color: #a89595;
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Esta es la orden mágica */
-    justify-content: center; /* Esto los centra */
-    gap: 20px; /* Esto les da espacio entre ellos */
+    display: flex; 
+    justify-content: center;
+    gap: 40px; 
 }
-
 
 .navbar li a {
-    display:block;
-    color: white;
+    display: block;
     text-align: center;
-    padding: 15px 35px;
-    transition: background-color 1s; /* suaviza el efecto hover */
+    font-weight: bold;
+    padding: 25px 20px;
+    font-size: 22px;
+    transition: all 0.3s;
+    text-decoration: none !important;
+    color: black !important;
 }
 
-/* efecto hover */
+/* EFECTO TIPO PESTAÑA */
 .navbar li a:hover {
-    background-color: #555; /* Cambia el color de fondo */
-    color: #fff;
-    border-bottom: 2px solid #f1a008; /* Anade borde inferior */
+    background-color: rgba(255,255,255,0.15);
+    color: black !important;
+    border-bottom: 4px solid white;
+}
+
+/* 3. TÍTULO */
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-top: 0; 
+    padding-top: 10px; 
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+/* 4. FOTO */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-top: 0; 
+}
+
+/* 5. FORZAR COLOR NEGRO EN TODOS LOS LINKS */
+.navbar a,
+.navbar a:link,
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active {
+    color: black !important;
+    text-decoration: none !important;
 }

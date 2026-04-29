@@ -157,12 +157,12 @@ img {
 /* 6. RESPONSIVE */
 @media (max-width: 768px) {
     .navbar ul {
-        gap: 0;
+        gap: 2px;
     }
 
     .navbar li a {
         font-size: 13px;
-        padding: 10px 8px;
+        padding: 10px 12px;
     }
 
     body {
@@ -173,7 +173,7 @@ img {
 @media (max-width: 480px) {
     .navbar li a {
         font-size: 11px;
-        padding: 8px 6px;
+        padding: 8px 10px;
     }
 
     body {

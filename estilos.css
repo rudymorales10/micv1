@@ -75,3 +75,108 @@ img {
     color: black !important;
     text-decoration: none !important;
 }
+/* 1. CONFIGURACIÓN DEL CUERPO */
+body {
+    background: linear-gradient(135deg, #225757 0%, #6cc8c6 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding-top: 70px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* 2. BARRA DE NAVEGACIÓN */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #399a99;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 15px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.navbar li a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 15px;
+    font-size: 16px;
+    transition: all 0.3s;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+/* EFECTO TIPO PESTAÑA */
+.navbar li a:hover {
+    background-color: rgba(255,255,255,0.15);
+    color: black !important;
+    border-bottom: 4px solid white;
+}
+
+/* 3. TÍTULO */
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-top: 0;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+/* 4. FOTO */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-top: 0;
+}
+
+/* 5. FORZAR COLOR NEGRO EN TODOS LOS LINKS */
+.navbar a,
+.navbar a:link,
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+/* 6. RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar ul {
+        gap: 0;
+    }
+
+    .navbar li a {
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+
+    body {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar li a {
+        font-size: 11px;
+        padding: 8px 6px;
+    }
+
+    body {
+        padding-top: 110px;
+    }
+}

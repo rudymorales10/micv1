@@ -92,7 +92,7 @@ body {
     z-index: 1000;
     background-color: #399a99;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .navbar ul {
@@ -101,25 +101,27 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 5px;
+    flex-wrap: nowrap;
+    gap: 0;
 }
 
-.navbar li a {
-    display: block;
+.navbar a {
+    display: inline-block;
     text-align: center;
     font-weight: bold;
-    padding: 15px 15px;
-    font-size: 16px;
+    padding: 8px 4px;
+    font-size: 10px;
     transition: all 0.3s;
     text-decoration: none !important;
     color: black !important;
+    white-space: nowrap;
 }
 
 /* EFECTO TIPO PESTAÑA */
-.navbar li a:hover {
+.navbar a:hover {
     background-color: rgba(255,255,255,0.15);
     color: black !important;
-    border-bottom: 4px solid white;
+    border-bottom: 3px solid white;
 }
 
 /* 3. TÍTULO */
@@ -129,10 +131,22 @@ h1 {
     margin-top: 0;
     padding-top: 10px;
     margin-bottom: 10px;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
-/* 4. FOTO */
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* 4. PÁRRAFOS */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+/* 5. FOTO */
 img {
     display: block;
     margin: 0 auto;
@@ -143,7 +157,12 @@ img {
     margin-top: 0;
 }
 
-/* 5. FORZAR COLOR NEGRO EN TODOS LOS LINKS */
+/* 6. LINKS */
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .navbar a,
 .navbar a:link,
 .navbar a:visited,
@@ -153,30 +172,26 @@ img {
     text-decoration: none !important;
 }
 
-/* 6. RESPONSIVE */
+/* 7. TAMAÑO FUENTE EN PC */
+@media (min-width: 769px) {
+    .navbar a {
+        font-size: 16px;
+        padding: 15px 15px;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+}
+
+/* 8. RESPONSIVE MÓVIL */
 @media (max-width: 768px) {
-    .navbar ul {
-        gap: 2px;
-    }
-
-    .navbar li a {
-        font-size: 13px;
-        padding: 10px 12px;
+    .navbar a {
+        font-size: 10px;
+        padding: 8px 4px;
     }
 
     body {
-        padding-top: 100px;
+        padding-top: 50px;
     }
 }
-
-@media (max-width: 480px) {
-    .navbar li a {
-        font-size: 11px;
-        padding: 8px 10px;
-    }
-
-    body {
-        padding-top: 110px;
-    }
-}
-```
